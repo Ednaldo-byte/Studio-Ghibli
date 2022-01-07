@@ -1,0 +1,47 @@
+:root {
+  --gradient: linear-gradient(343deg, #1a4855 0%, #628e75 100%);
+  --green: #658e76;
+  --white: #f9f9f9;
+}
+.modal {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+
+  display: flex;
+  flex-direction: column;
+}
+iframe{
+  max-width: 60vw;
+}
+.modal span{
+  font-size: 12px;
+  background: var(--green);
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.invisible {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  top: -50px;
+}
+
+@media (max-width: 1180px){
+  .modal{
+    max-width: 50vw;
+  }
+}

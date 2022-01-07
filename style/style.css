@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+:root{
+  --gradient: linear-gradient(343deg, #1A4855 0%, #628E75 100%);
+  --green: #658E76;
+  --white: #F9F9F9;
+}
+*{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Poppins', sans-serif;
+  color: var(--white)
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  height: 100vh;
+  background: var(--gradient);
+  background-repeat: no-repeat;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+  padding: 6rem 16rem 0;
+  margin-bottom: 6rem;
+}
+header div{
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+header div a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+main{
+  padding: 0 16rem ;
+}
+main section{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main section img{
+  max-width: 50vw;
+}
+main section .content{
+  width: 45rem;
+}
+main section .content h2{
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 1.4rem;
+}
+main section .content h1{
+  font-size: 7rem;
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+main section .content p{
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 29px;
+  margin-bottom: 4.6rem;
+}
+main section .content .buttons{
+  display: flex;
+}
+main section .content .buttons button{
+  background: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  padding: .8rem;
+  margin-left: 2rem;
+  width: 18.8rem;
+  height: 4.5rem;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+main section .content .buttons button img{
+  width: 1rem;
+}
+
+#background{
+  width: 18.8rem;
+  height: 4.5rem;
+  background: var(--green);
+  position: absolute;
+  z-index: -1;
+  transform: skew(-40deg);
+
+  margin-left: 2rem;
+}
+
+#border{
+  width: 18.8rem;
+  height: 4rem;
+  border: 3px solid var(--green);
+  position: absolute;
+  z-index: -1;
+  transform: skew(-40deg);
+  margin-left: 2rem;
+}
+
+@media (max-width: 1180px){
+  body{
+    height: 100vh;
+  }
+  main section img{
+    max-width: 50%;
+  }
+  main section .content{
+    width: 45rem;
+  }
+  main section .content h2{
+    font-size: 1.7rem;
+  }
+  main section .content h1{
+    font-size: 5rem;
+  }
+  main section .content p{
+    font-size: 1.4rem;
+  }
+
+  main section .content .buttons button{
+    width: 15rem;
+    height: 5.5rem;
+    font-size: 1.5rem;
+  }
+  main section .content .buttons button img{
+    width: 1rem;
+  }
+  
+  #background{
+    width: 15rem;
+    height: 5.5rem;
+  }
+  
+  #border{
+    width: 15rem;
+    height: 5rem;
+  }
+}
+
+@media (max-width: 900px){
+  body{
+    height: auto;
+  }
+  main{
+    padding-bottom: 6rem;
+  }
+  main section{
+    flex-direction: column-reverse;
+  }
+  main section .content{
+    width: 100%;
+  }
+  main section img{
+    max-width:90vw;
+  }
+  main section .content h2{
+    font-size: 2rem;
+  }
+  main section .content h1{
+    font-size: 7rem;
+  }
+  main section .content p{
+    font-size: 1.4rem;
+  }
+  main section .content .buttons{
+    justify-content: space-between;
+  }
+  main section .content .buttons button:nth-last-child(1){
+    margin-left: 5rem;
+  }
+  #background{
+    width: 20rem;
+  }
+  #border{
+    width: 20rem;
+  }
+}
+
+@media (max-width: 750px){
+  main section .content .buttons{
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #trailer, #border{
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 700px){
+  html{
+    width: 100%;
+  }
+  body{
+    padding: 3rem;
+  }
+  header{
+    padding: 3rem 0 0;
+  }
+  main{
+    padding: 0 0  6rem;
+  }
+  main section .content h2{
+    font-size: 2rem;
+  }
+  main section .content h1{
+    font-size: 4.5rem;
+  }
+  main section .content p{
+    font-size: 1.4rem;
+  }
+
+}

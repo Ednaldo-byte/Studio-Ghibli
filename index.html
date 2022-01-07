@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Ghibili - A viagem de Chihiro</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/modal.css">
+  </head>
+  <body>
+    <header>
+      <a href="https://studioghibli.com.br/" target="_blank"
+        ><img src="assets/logo.svg" alt="Logo Studio Ghibli"
+      /></a>
+      <div>
+        <a href="https://www.facebook.com/StudioGhibliBrasil" target="_blank"
+          ><img src="assets/facebook.svg" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com/ghiblibrasil/" target="_blank"
+          ><img src="assets/instagram.svg" alt="Instagram"
+        /></a>
+        <a href="https://twitter.com/GhibliBrasil" target="_blank"
+          ><img src="assets/twitter.svg" alt="Twitter"
+        /></a>
+        <a
+          href="https://www.youtube.com/channel/UCoVh0O_3lbyYREfpmB5sBWQ"
+          target="_blank"
+          ><img src="assets/youtube.svg" alt="Youtube"
+        /></a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="content">
+          <h2>Hayao Miyazaki</h2>
+          <h1>Aviagem de Chihiro</h1>
+          <p>Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a desobedecem são transformados em animais.</p>
+          <div class="buttons">
+            <a href="https://www.netflix.com/br/title/60023642" target="_blank">
+              <div>
+                <span id="background"></span>
+                <button id="film">
+                  <img src="assets/Vector.svg" alt=""> Assista agora
+                </button>
+              </div>
+            </a>
+              <div>
+                <span id="border"></span>
+                <button id="trailer" onclick="show_hide()">Assista ao trailer</button>
+              </div>
+          </div>
+        </div>
+        <img src="assets/image.svg" alt="No-Faces">
+      </section>
+    </main>
+
+    <div class="modal invisible">
+      <iframe class="iframe invisible" width="560" height="315" src="https://www.youtube.com/embed/SgZI655GgHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <span id="close" class="invisible" onclick="show_hide()">Fechar</span>
+    </div>
+  </body>
+</html>
+<script src="script/script.js"></script>
