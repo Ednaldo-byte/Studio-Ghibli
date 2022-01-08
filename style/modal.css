@@ -12,22 +12,18 @@
   right: 0; 
   text-align: center;
   padding: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #1a485588;
   backdrop-filter: blur(3px);
 
   display: flex;
   flex-direction: column;
-}
-iframe{
-  max-width: 60vw;
+  justify-content: center;
+  align-items: center;
 }
 .modal span{
   font-size: 12px;
   background: var(--green);
-  padding: 1rem;
+  padding: 1rem 3rem;
   margin-top: 2rem;
   border-radius: 1rem;
   cursor: pointer;

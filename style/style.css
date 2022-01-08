@@ -142,6 +142,7 @@ main section .content .buttons button img{
   }
   main section .content h1{
     font-size: 5rem;
+    text-transform: uppercase;
   }
   main section .content p{
     font-size: 1.4rem;
