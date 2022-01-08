@@ -18,6 +18,7 @@ body{
   height: 100vh;
   background: var(--gradient);
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 header{
@@ -48,8 +49,9 @@ main section{
   flex-direction: row;
   justify-content: space-between;
 }
-main section img{
+main section #phantons{
   max-width: 50vw;
+  animation: 4s phantons infinite alternate;
 }
 main section .content{
   width: 45rem;
@@ -88,10 +90,13 @@ main section .content .buttons button{
   border: none;
   cursor: pointer;
 }
+main section .content .buttons div:hover{
+  transform: translateY(-3px);
+  transition: 200ms;
+}
 main section .content .buttons button img{
   width: 1rem;
 }
-
 #background{
   width: 18.8rem;
   height: 4.5rem;
@@ -102,7 +107,6 @@ main section .content .buttons button img{
 
   margin-left: 2rem;
 }
-
 #border{
   width: 18.8rem;
   height: 4rem;
@@ -113,12 +117,22 @@ main section .content .buttons button img{
   margin-left: 2rem;
 }
 
+@keyframes phantons{
+  from{
+    transform: translateY(-20px);
+  }
+  to{
+    transform: translateY(10px);
+  }
+}
+
 @media (max-width: 1180px){
   body{
     height: 100vh;
+    overflow: auto;
   }
-  main section img{
-    max-width: 50%;
+  main section #phantons{
+    max-width: 50vw;
   }
   main section .content{
     width: 45rem;
@@ -162,6 +176,9 @@ main section .content .buttons button img{
   }
   main section{
     flex-direction: column-reverse;
+  }
+  main section #phantons{
+    max-width: 80vw;
   }
   main section .content{
     width: 100%;
@@ -212,7 +229,7 @@ main section .content .buttons button img{
     padding: 3rem;
   }
   header{
-    padding: 3rem 0 0;
+    padding: 0;
   }
   main{
     padding: 0 0  6rem;
